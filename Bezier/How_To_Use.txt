@@ -1,0 +1,17 @@
+							Controls
+		Left Mouse Click: Selects a control point if clicked near one.
+		Mouse Drag: Moves the selected control point, updating the curve dynamically
+		Release Mouse Button: Deselects the control point.
+						
+							How It Works
+
+		The program initializes an OpenGL window with a size of 800×800 pixels.
+		It generates four random control points within a normalized coordinate system.
+		The Bézier curve is drawn by evaluating the de Casteljau algorithm at different t values (0 to 1).
+		Control points appear as small dots, and the curve updates as you move them.
+		Simply run the program, click on a control point, and drag it to see the curve change in real time
+							
+							Two Pairs of points
+		Control Points – These define the shape of the curve and can be moved by clicking and dragging them. Adjusting these points changes the curve’s trajectory.
+		Curve Points – These are the points generated along the Bézier curve itself. 
+		
